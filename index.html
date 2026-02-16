@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Facebook UI Clone</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+body{
+    background:#f0f2f5;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Top Navbar */
+.topbar{
+    height:56px;
+    background:#fff;
+    border-bottom:1px solid #ddd;
+}
+
+.fb-logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#1877f2;
+}
+
+.search-box{
+    background:#f0f2f5;
+    border:none;
+    border-radius:50px;
+    padding-left:35px;
+}
+
+.search-icon{
+    position:absolute;
+    left:10px;
+    top:8px;
+    color:gray;
+}
+
+/* Left Sidebar */
+.left{
+    position:fixed;
+    top:56px;
+    left:0;
+    width:280px;
+    height:100%;
+    padding:15px;
+    overflow-y:auto;
+}
+
+.left a{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:10px;
+    border-radius:8px;
+    text-decoration:none;
+    color:#050505;
+    font-weight:500;
+}
+
+.left a:hover{
+    background:#e4e6eb;
+}
+
+/* Feed */
+.feed{
+    margin-top:70px;
+    margin-left:300px;
+    margin-right:300px;
+}
+
+/* Right Sidebar */
+.right{
+    position:fixed;
+    top:56px;
+    right:0;
+    width:280px;
+    height:100%;
+    padding:15px;
+    overflow-y:auto;
+}
+
+/* Cards */
+.card{
+    border:none;
+    border-radius:12px;
+    box-shadow:0 1px 2px rgba(0,0,0,0.1);
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="topbar fixed-top d-flex align-items-center px-3">
+
+    <div class="fb-logo me-3">f</div>
+
+    <div class="position-relative me-auto" style="width:300px;">
+        <i class="bi bi-search search-icon"></i>
+        <input type="text" class="form-control search-box" placeholder="Search Facebook">
+    </div>
+
+    <div class="d-flex gap-4 fs-5">
+        <i class="bi bi-house-door-fill"></i>
+        <i class="bi bi-people"></i>
+        <i class="bi bi-collection-play"></i>
+        <i class="bi bi-bell"></i>
+        <i class="bi bi-person-circle"></i>
+    </div>
+</div>
+
+
+<!-- LEFT SIDEBAR -->
+<div class="left bg-white">
+    <a href="#"><i class="bi bi-person-circle fs-4"></i> Mubashir Khan</a>
+    <a href="#"><i class="bi bi-robot fs-4 text-primary"></i> Meta AI</a>
+    <a href="#"><i class="bi bi-people-fill fs-4 text-primary"></i> Friends</a>
+    <a href="#"><i class="bi bi-clock-history fs-4 text-primary"></i> Memories</a>
+    <a href="#"><i class="bi bi-bookmark-fill fs-4 text-primary"></i> Saved</a>
+    <a href="#"><i class="bi bi-collection fs-4 text-primary"></i> Groups</a>
+    <a href="#"><i class="bi bi-play-btn-fill fs-4 text-danger"></i> Reels</a>
+    <a href="#"><i class="bi bi-shop fs-4 text-primary"></i> Marketplace</a>
+</div>
+
+
+<!-- CENTER FEED -->
+<div class="feed">
+
+    <!-- Create Post -->
+    <div class="card p-3 mb-4">
+        <div class="d-flex align-items-center gap-2">
+            <img src="https://picsum.photos/40" class="rounded-circle">
+            <input type="text" class="form-control rounded-pill" placeholder="What's on your mind?">
+        </div>
+    </div>
+
+    <!-- Post -->
+    <div class="card p-3 mb-4">
+        <div class="d-flex align-items-center mb-2">
+            <img src="https://picsum.photos/40" class="rounded-circle me-2">
+            <div>
+                <strong>Saylani Mass I.T Training</strong><br>
+                <small class="text-muted">3h · Speaker Announcement</small>
+            </div>
+        </div>
+
+        <img src="https://picsum.photos/600/400" class="img-fluid rounded mb-3">
+
+        <div class="d-flex justify-content-between text-center">
+            <button class="btn btn-light w-100 me-1">Like</button>
+            <button class="btn btn-light w-100 me-1">Comment</button>
+            <button class="btn btn-light w-100">Share</button>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- RIGHT SIDEBAR -->
+<div class="right bg-white">
+
+    <h6 class="fw-bold">Sponsored</h6>
+    <div class="d-flex gap-2 mb-3">
+        <img src="https://picsum.photos/80" class="rounded">
+        <small>Advertisement preview text here</small>
+    </div>
+
+    <hr>
+
+    <h6 class="fw-bold">Contacts</h6>
+    <p>Ali</p>
+    <p>Usman</p>
+    <p>Sara</p>
+
+</div>
+
+</body>
+</html>
